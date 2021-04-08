@@ -1,0 +1,66 @@
+\documentclass[a4paper,10pt,twocolumn]{jarticle}
+\pagestyle{plain}
+\usepackage{aktsbase}
+
+\begin{document}
+
+\twocolumn[
+
+%ヘッダ出力命令
+%引数は，年度，第何回目か，発表タイトル
+\beginheader{2013}{1}{ロボットのセンサ
+}
+
+%担当者(フルネームで)
+\name{関　樹}
+
+%開催日
+\date{2013年4月24日}
+
+\endheader%
+%
+%必要に応じて輪講の概要を書きます．
+\begin{abstract}
+○○○×××
+\end{abstract}%
+%
+\vspace{3mm}
+]
+
+\section{位置センサ}
+
+\subsection{エンコーダ}
+以下にサンプルとして(\ref{eq_force})式と(\ref{eq_torque})式を示す。
+\begin{eqnarray}
+F&=&ma\label{eq_force}\\
+\tau&=&I\ddot\theta\label{eq_torque}
+\end{eqnarray}
+\subsection{図}
+\begin{figure}[hb]
+  \centering  % 中央揃えするなら
+  \includegraphics[width=7.5cm]{fig/traveldistance.eps}
+  %\epsfile{width=8.2cm,file=fig/threeandtwophase.eps}
+  \caption{図のサンプル}
+\end{figure}
+
+\subsection{表}
+
+\begin{table}[hb]
+  \centering
+  \caption{表のサンプル}
+  \begin{tabular}{|c|cc|}
+    \hline
+    11 & 12 & 13 \\
+    \hline
+    21 & 22 & 23 \\
+    31 & 32 & 33 \\
+    41 & 42 & 43 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\end{document}
+
+
+
+
